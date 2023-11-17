@@ -26,7 +26,7 @@ const show = (results) => {
 
     results.forEach((user) => {
         const img = document.createElement("img")
-        img.className = "w-100"
+        img.className = "w-100 rounded"
         img.src = user.picture.medium
         img.alt = "User Avatar"
         const h5 = document.createElement("h5")
@@ -37,8 +37,8 @@ const show = (results) => {
         const p2 = document.createElement("p")
         p2.textContent = user.phone
         const btn = document.createElement("button")
-        btn.className = "btn btn-primary w-100 p-2"
-        btn.textContent = "Select"
+        btn.className = "btn btn-primary w-100 fw-bold"
+        btn.textContent = "Refresh"
 
         randomUser.appendChild(img)
         randomUser.appendChild(h5)
